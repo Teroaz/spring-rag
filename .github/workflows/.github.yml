@@ -94,4 +94,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}:latest
+          tags: ${{ env.DOCKER_REGISTRY_URL }}/${{ github.repository_owner }}/${{ env.DOCKER_IMAGE_NAME }}
